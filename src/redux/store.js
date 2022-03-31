@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import rootReducer from "./redux/reducers/RootReducer";
+import rootReducer from "./reducers/RootReducer";
 
 const INITIAL_STATE = {
     user: null,
