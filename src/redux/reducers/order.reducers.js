@@ -4,11 +4,7 @@ import {
     CLEAR_CART
 } from "../actions";
 
-const initialState = {
-    cart: []
-};
-
-export default function orderReducer(state = initialState, action) {
+export default function orderReducer(state, action) {
     switch (action.type) {
         case ADD_TO_CART:
             return { ...state, cart: [...state.cart, action.order] };

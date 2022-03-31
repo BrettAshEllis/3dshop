@@ -3,7 +3,7 @@ import {
     CLEAR_SEARCH
 } from "../actions";
 
-export default function searchReducer(state = INITIAL_STATE, action) {
+export default function searchReducer(state, action) {
     switch (action.type) {
         case SET_SEARCH:
             return { ...state, search: [...state.search, action.results] };
